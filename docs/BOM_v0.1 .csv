@@ -1,0 +1,50 @@
+Item,Description,Purpose,Notes
+Copper Tubing,"1/2"" ID Soft Copper (10ft roll)",Main Radiating Loop,Found in plumbing aisles.
+PVC Pipe,"1.25"" Schedule 40 (10ft)",Main Vertical Mast/Base,"Stiffer than 1""."
+PVC Pipe,"1"" Schedule 40 (5ft)",Swivel Inner Mast,"Fits loosely inside 1.25"" for swiveling."
+PVC Fittings,"1.25"" T-Joints (x4), Caps (x4)",Base / Stand Feet,"For a stable ""H"" or ""X"" base."
+PVC Fitting,"1"" T-Joint (x1)",Loop Support,Holds the horizontal cross-arm.
+Coax Connector,SO-239 or BNC Bulkhead,Feedpoint,Mounts to the small coupling loop.
+,,,
+,,,
+,,,
+Item,Description,Purpose,Notes
+Air Variable Cap,25-250pF (Transmitting type),Tuning Element,Critical: Min 2.5mm plate gap for 100W.
+Reduction Drive,6:1 or 8:1 Planetary Drive,Fine Tuning,Essential if using a non-geared stepper.
+Shaft Coupler,"5mm to 1/4"" Flexible Coupler",Motor-to-Cap Link,Prevents binding and axial stress.
+Limit Switch,Microswitch or Hall Effect,Homing / Zeroing,Calibrates the motor on boot.
+,,,
+,,,
+,,,
+Item,Description,Purpose,Notes
+Microcontroller,Raspberry Pi Pico (RP2040),System Logic,Dual-core is the key.
+Stepper Motor,NEMA 17 (1.8 deg/step),Physical Tuning,Optional: Get one with a 5:1 gearbox.
+Motor Driver,TMC2208 or TMC2209,Silent Stepper Control,Much quieter RFI than A4988.
+Project Box,Die-cast Aluminum (Large),Antenna Brain Housing,Must be metal for RF shielding.
+Buck Converter,12V to 5V DC-DC,Powering the Pico,Steps down the main motor rail.
+RJ45 Jack,Shielded Keystones (x2),Cat-link Ports,"One for the stand, one for the box."
+,,,
+,,,
+,,,
+Item,Description,Purpose,Notes
+Enclosure,Sloped-Front Aluminum Chassis,Desktop UI Housing,Ergonomic for the desk.
+LCD Display,16x2 Character LCD,Status / Menu,Blue/White or Green/Black.
+I2C Backpack,PCF8574 I2C Interface,Display Data,Reduces wiring to 4 wires.
+Rotary Encoder,Bourns PEC11R w/ Switch,Tuning / Menu Nav,Choose 24-pulse with detents.
+I2C Expander,PCF8574 Board,Button/Encoder Input,Optional if using I2C Encoder board.
+,,,
+,,,
+,,,
+Item,Description,Purpose,Notes
+Ferrite Cores,Amidon BN-43-202 (x2),RF Sampling,Binocular cores for Stockton Bridge.
+Diodes,1N34A or BAT41 (x2),RF Rectification,Germanium or Schottky for low Vf.
+Resistors,51-ohm 2W Metal Film (x2),Bridge Termination,Must be non-inductive.
+Capacitors,0.01uF 1kV Ceramic (x4),RF Bypass/Filtering,High voltage rated for 100W safety.
+,,,
+,,,
+,,,
+Item,Description,Purpose,Notes
+Ethernet Cable,S/FTP Cat6 or Cat7 (50ft),Remote Control Link,Individual pair shielding is mandatory.
+Ferrite Chokes,Mix 31 Snap-ons (x4),RFI Suppression,Clamp on both ends of the Cat cable.
+Wire,22AWG Hookup Wire,Internal Wiring,Various colors for easier debugging.
+Power Supply,12V DC 2A Wall Wart,System Power,Powers the motor and Pico.
